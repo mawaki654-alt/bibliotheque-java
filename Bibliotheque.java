@@ -29,7 +29,7 @@ public class Bibliotheque {
         }
     }
     public boolean rendre(Membre membre, Livre livre){
-        if (membre.livrePosseder(livre) == false) {
+        if (membre.aEmprunte(livre) == false) {
             return false;
         }else{
             membre.retirerEmprunt(livre);

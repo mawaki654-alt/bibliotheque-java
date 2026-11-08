@@ -28,11 +28,4 @@ public class Membre {
     public void retirerEmprunt(Livre livre){
         livresEmpruntes.remove(livre);
     }
-    public boolean livrePosseder(Livre livre){
-        if (livresEmpruntes.contains(livre)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 }
